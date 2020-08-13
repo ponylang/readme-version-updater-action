@@ -22,7 +22,7 @@ jobs:
     name: Update version in README examples
     steps:
       - name: Update version in README examples
-        uses: ponylang/action-readme-version-updater@0.0.0
+        uses: ponylang/action-readme-version-updater@0.0.1
         with:
           git_user_name: "Ponylang Main Bot"
           git_user_email: "ponylang.main@gmail.com"
