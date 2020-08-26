@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Changed
 
+- Turn on branch.autorebasesetup when pushing/pulling ([PR #7](https://github.com/ponylang/action-readme-version-updater/pull/7))
 
 ## [0.0.1] - 2020-08-13
 
