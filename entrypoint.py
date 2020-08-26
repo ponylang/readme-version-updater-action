@@ -37,6 +37,7 @@ git = git.Repo.clone_from(clone_from, '.').git
 print(INFO + "Setting up git configuration." + ENDC)
 git.config('--global', 'user.name', os.environ['INPUT_GIT_USER_NAME'])
 git.config('--global', 'user.email', os.environ['INPUT_GIT_USER_EMAIL'])
+git.config('--global', 'branch.autosetuprebase', 'always')
 
 # what to find and what to replace it with
 find = f'{repository}@\d+\.\d+\.\d+' # pylint: disable=W1401
