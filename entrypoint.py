@@ -62,7 +62,7 @@ while True:
     try:
         git.push()
         break
-    except git.GitCommandError:
+    except git.exc.GitCommandError:
         push_failures += 1
         if push_failures <= 5:
             print(NOTICE
