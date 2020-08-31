@@ -2,7 +2,7 @@
 
 Updates the version of an action in its README on release. This action assumes that you are using our [release-bot-action](https://github.com/ponylang/release-bot-action) to do releases.
 
-For example, this README contains `ponylang/action-readme-version-updater@0.1.1` within the example workflow below. On release, that will be updated to whatever the new version is and that change will be pushed back to the repo as part of the "artefact building steps" that you include as part of setting up the release-bot-action.
+For example, this README contains `ponylang/action-readme-version-updater@0.1.2` within the example workflow below. On release, that will be updated to whatever the new version is and that change will be pushed back to the repo as part of the "artefact building steps" that you include as part of setting up the release-bot-action.
 
 ## Example workflow
 
@@ -22,7 +22,7 @@ jobs:
     name: Update version in README examples
     steps:
       - name: Update version in README examples
-        uses: ponylang/action-readme-version-updater@0.1.1
+        uses: ponylang/action-readme-version-updater@0.1.2
         with:
           git_user_name: "Ponylang Main Bot"
           git_user_email: "ponylang.main@gmail.com"
