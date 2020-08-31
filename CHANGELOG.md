@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Fixed
 
+- Fix broken push retries ([PR #10](https://github.com/ponylang/action-readme-version-updater/pull/10))
 
 ### Added
 
