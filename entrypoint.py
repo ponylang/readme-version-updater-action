@@ -6,6 +6,7 @@ import os
 import re
 import sys
 import git
+from git.exc import GitCommandError
 from github import Github
 
 ENDC = '\033[0m'
@@ -62,7 +63,7 @@ while True:
     try:
         git.push()
         break
-    except git.exc.GitCommandError:
+    except GitCommandError:
         push_failures += 1
         if push_failures <= 5:
             print(NOTICE
