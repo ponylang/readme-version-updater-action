@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Changed
 
+- Rebase on pull ([PR #11](https://github.com/ponylang/action-readme-version-updater/pull/11))
 
 ## [0.1.2] - 2020-08-31
 
