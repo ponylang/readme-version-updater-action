@@ -57,10 +57,10 @@ print(INFO + "Adding git changes." + ENDC)
 git.add('README.md')
 git.commit('-m', f'Update README examples to reflect new version {version}')
 
-print(INFO + "Pushing updated README." + ENDC)
 push_failures = 0
 while True:
     try:
+        print(INFO + "Pushing updated README." + ENDC)
         git.push()
         break
     except GitCommandError:
