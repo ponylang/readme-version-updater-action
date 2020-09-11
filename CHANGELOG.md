@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Fixed
 
+- Improve logging around multiple push attempts ([PR #12](https://github.com/ponylang/action-readme-version-updater/pull/12))
 
 ### Added
 
