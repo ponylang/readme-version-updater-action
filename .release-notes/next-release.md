@@ -8,3 +8,7 @@ Now each push and pull attempt will be logged.
 
  The scope of the action-readme-version-updater has been expanded. Previously, it was focused not on updating our standard action READMEs. This change makes the action-readme-version-updater useful with our normal library READMEs that include instructions on how to use the library via corral. "Corral add" instructions can now include the proper current version.
 
+## Rename to readme-version-updater-action
+
+This action has gained additional functionality that is no longer specific to ponylang GitHub action READMEs. As such, it has been given a more generic name.
+
