@@ -1,4 +1,4 @@
-TAG := docker.pkg.github.com/ponylang/action-readme-version-updater/action-readme-version-updater:latest
+TAG := docker.pkg.github.com/ponylang/readme-version-updater-action/readme-version-updater-action:latest
 
 all: build
 

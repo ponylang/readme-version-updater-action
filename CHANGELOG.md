@@ -6,39 +6,39 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Fixed
 
-- Improve logging around multiple push attempts ([PR #12](https://github.com/ponylang/action-readme-version-updater/pull/12))
+- Improve logging around multiple push attempts ([PR #12](https://github.com/ponylang/readme-version-updater-action/pull/12))
 
 ### Added
 
-- Add support for updating `corral add` instructions in README.md ([PR #14](https://github.com/ponylang/action-readme-version-updater/pull/14))
+- Add support for updating `corral add` instructions in README.md ([PR #14](https://github.com/ponylang/readme-version-updater-action/pull/14))
 
 ### Changed
 
-- Rename to readme-version-updater-action ([PR #15](https://github.com/ponylang/action-readme-version-updater/pull/15))
+- Rename to readme-version-updater-action ([PR #15](https://github.com/ponylang/readme-version-updater-action/pull/15))
 
 ## [0.1.3] - 2020-09-10
 
 ### Changed
 
-- Rebase on pull ([PR #11](https://github.com/ponylang/action-readme-version-updater/pull/11))
+- Rebase on pull ([PR #11](https://github.com/ponylang/readme-version-updater-action/pull/11))
 
 ## [0.1.2] - 2020-08-31
 
 ### Fixed
 
-- Fix broken push retries ([PR #10](https://github.com/ponylang/action-readme-version-updater/pull/10))
+- Fix broken push retries ([PR #10](https://github.com/ponylang/readme-version-updater-action/pull/10))
 
 ## [0.1.1] - 2020-08-30
 
 ### Fixed
 
-- Fix broken push retries ([PR #9](https://github.com/ponylang/action-readme-version-updater/pull/9))
+- Fix broken push retries ([PR #9](https://github.com/ponylang/readme-version-updater-action/pull/9))
 
 ## [0.1.0] - 2020-08-26
 
 ### Changed
 
-- Turn on branch.autorebasesetup when pushing/pulling ([PR #7](https://github.com/ponylang/action-readme-version-updater/pull/7))
+- Turn on branch.autorebasesetup when pushing/pulling ([PR #7](https://github.com/ponylang/readme-version-updater-action/pull/7))
 
 ## [0.0.1] - 2020-08-13
 
