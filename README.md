@@ -6,7 +6,7 @@ Two different possible version types are currently updated:
 
 - Action usage instructions
 
-For example, this README contains `ponylang/action-readme-version-updater@0.1.3` within the example workflow below. On release, that will be updated to whatever the new version is.
+For example, this README contains `ponylang/readme-version-updater-action@0.1.3` within the example workflow below. On release, that will be updated to whatever the new version is.
 
 - Corral add instructions
 
@@ -21,7 +21,7 @@ On release of said library, the version in the corral add string will be updated
 
 ## Example workflow
 
-The action-readme-version-updater should be set up as an "artefact building step" in the release-bot-action's [release.yml](https://github.com/ponylang/release-bot-action#trigger-release-announcement).
+The readme-version-updater-action should be set up as an "artefact building step" in the release-bot-action's [release.yml](https://github.com/ponylang/release-bot-action#trigger-release-announcement).
 
 ```yml
 name: Release
@@ -37,7 +37,7 @@ jobs:
     name: Update version in README examples
     steps:
       - name: Update version in README examples
-        uses: ponylang/action-readme-version-updater@0.1.3
+        uses: ponylang/readme-version-updater-action@0.1.3
         with:
           git_user_name: "Ponylang Main Bot"
           git_user_email: "ponylang.main@gmail.com"
@@ -45,4 +45,4 @@ jobs:
           API_CREDENTIALS: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-Note, you do not need to create `GITHUB_TOKEN`. It is already provided by GitHub. You merely need to make it available to the action-readme-version-updater action.
+Note, you do not need to create `GITHUB_TOKEN`. It is already provided by GitHub. You merely need to make it available to the readme-version-updater-action action.
