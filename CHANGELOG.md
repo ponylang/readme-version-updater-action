@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Added
 
+- Add support for updating `corral add` instructions in README.md ([PR #14](https://github.com/ponylang/action-readme-version-updater/pull/14))
 
 ### Changed
 
