@@ -14,6 +14,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Changed
 
+- Rename to readme-version-updater-action ([PR #15](https://github.com/ponylang/action-readme-version-updater/pull/15))
 
 ## [0.1.3] - 2020-09-10
 
