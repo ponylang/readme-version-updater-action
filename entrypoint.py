@@ -44,8 +44,8 @@ git.config('--global', 'branch.autosetuprebase', 'always')
 subs = [
     (fr'{repository}@\d+\.\d+\.\d+',
      f'{repository}@{version}'),
-    (fr'corral add github.com/{repository} -(-version|v) \d+\.\d+\.\d+',
-     fr'corral add github.com/{repository} -\1 {version}'
+    (fr'corral add github.com/{repository}.git -(-version|v) \d+\.\d+\.\d+',
+     fr'corral add github.com/{repository}.git -\1 {version}'
     )
 ]
 
