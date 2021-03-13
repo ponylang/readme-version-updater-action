@@ -1,8 +1,23 @@
-# Action README Version Updater
+# README Version Updater
 
-Updates the version of an action in its README on release. This action assumes that you are using our [release-bot-action](https://github.com/ponylang/release-bot-action) to do releases.
+Updates version info in a project's README on release. This action assumes that you are using our [release-bot-action](https://github.com/ponylang/release-bot-action) to do releases.
 
-For example, this README contains `ponylang/action-readme-version-updater@0.1.3` within the example workflow below. On release, that will be updated to whatever the new version is and that change will be pushed back to the repo as part of the "artefact building steps" that you include as part of setting up the release-bot-action.
+Two different possible version types are currently updated:
+
+- Action usage instructions
+
+For example, this README contains `ponylang/action-readme-version-updater@0.1.3` within the example workflow below. On release, that will be updated to whatever the new version is.
+
+- Corral add instructions
+
+It's a common pattern for a Pony library's README to include information on how
+to add the library to a project using `corral add`. For example:
+
+```text
+corral add github.com/ponylang/appdirs.git --version 0.1.0
+```
+
+On release of said library, the version in the corral add string will be updated by this action to whatever the new version is. Note that because this action is a GitHub action, corral add instruction updating only works for add instructions that are referencing a git repo.
 
 ## Example workflow
 
