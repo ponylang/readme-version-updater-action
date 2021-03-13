@@ -41,14 +41,21 @@ git.config('--global', 'user.email', os.environ['INPUT_GIT_USER_EMAIL'])
 git.config('--global', 'branch.autosetuprebase', 'always')
 
 # what to find and what to replace it with
-find = f'{repository}@\d+\.\d+\.\d+' # pylint: disable=W1401
-replace = f'{repository}@{version}'
+subs = [
+    (fr'{repository}@\d+\.\d+\.\d+',
+     f'{repository}@{version}'),
+    (fr'corral add github.com/{repository} -(-version|v) \d+\.\d+\.\d+',
+     fr'corral add github.com/{repository} -\1 {version}'
+    )
+]
 
 # open README.md and update with new version
-print(INFO + "Updating version to " + replace + ENDC)
+print(INFO + "Updating versions in README.md to " + version + ENDC)
 readme = open("README.md", "r+")
 text = readme.read()
-text = re.sub(find, replace, text)
+for sub in subs:
+    (find, replace) = sub
+    text = re.sub(find, replace, text)
 readme.seek(0)
 readme.write(text)
 readme.close()
