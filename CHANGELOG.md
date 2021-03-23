@@ -2,17 +2,11 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a CHANGELOG](http://keepachangelog.com/).
 
-## [unreleased] - unreleased
-
-### Fixed
-
+## [0.2.1] - 2021-03-23
 
 ### Added
 
 - Add support for README files that aren't README.md ([PR #17](https://github.com/ponylang/readme-version-updater-action/pull/17))
-
-### Changed
-
 
 ## [0.2.0] - 2021-03-13
 
