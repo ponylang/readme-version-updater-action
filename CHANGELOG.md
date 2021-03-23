@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Added
 
+- Add support for README files that aren't README.md ([PR #17](https://github.com/ponylang/readme-version-updater-action/pull/17))
 
 ### Changed
 
