@@ -3,6 +3,7 @@
 # pylint: disable=C0114
 
 import os
+import os.path
 import re
 import sys
 import git
@@ -49,9 +50,26 @@ subs = [
     )
 ]
 
-# open README.md and update with new version
-print(INFO + "Updating versions in README.md to " + version + ENDC)
-readme = open("README.md", "r+")
+# find the README
+readme_file_options = [
+    "README.md",
+    "README.rst"
+]
+
+readme_file = ""
+for rfo in readme_file_options:
+    if os.path.isfile(rfo):
+        readme_file = rfo
+        break
+
+
+if not readme_file:
+    print(ERROR + "Unable to find README. Exiting." + ENDC)
+    sys.exit(1)
+
+# open README and update with new version
+print(INFO + "Updating versions in " + readme_file + " to " + version + ENDC)
+readme = open(readme_file, "r+")
 text = readme.read()
 for sub in subs:
     (find, replace) = sub
@@ -61,8 +79,9 @@ readme.write(text)
 readme.close()
 
 print(INFO + "Adding git changes." + ENDC)
-git.add('README.md')
-git.commit('-m', f'Update README examples to reflect new version {version}')
+git.add(readme_file)
+git.commit('-m',
+    f'Update {readme_file} examples to reflect new version {version}')
 
 push_failures = 0
 while True:

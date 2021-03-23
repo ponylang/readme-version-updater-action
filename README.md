@@ -19,6 +19,8 @@ corral add github.com/ponylang/appdirs.git --version 0.1.0
 
 On release of said library, the version in the corral add string will be updated by this action to whatever the new version is. Note that because this action is a GitHub action, corral add instruction updating only works for add instructions that are referencing a git repo.
 
+A project's README is assumed to be named either `README.md` or `README.rst`. The first one found will be used. The action will fail if no README file is found.
+
 ## Example workflow
 
 The readme-version-updater-action should be set up as an "artefact building step" in the release-bot-action's [release.yml](https://github.com/ponylang/release-bot-action#trigger-release-announcement).
