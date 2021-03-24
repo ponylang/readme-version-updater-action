@@ -80,6 +80,9 @@ readme.close()
 
 print(INFO + "Adding git changes." + ENDC)
 git.add(readme_file)
+if not git.status("-s"):
+    print(INFO + "No changes. Exiting." + ENDC)
+    sys.exit(0)
 git.commit('-m',
     f'Update {readme_file} examples to reflect new version {version}')
 
