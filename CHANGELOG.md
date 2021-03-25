@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Changed
 
+- Don't try to push if there are no changes ([PR #18](https://github.com/ponylang/readme-version-updater-action/pull/18))
 
 ## [0.2.1] - 2021-03-23
 
