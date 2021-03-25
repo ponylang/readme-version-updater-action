@@ -6,7 +6,7 @@ Two different possible version types are currently updated:
 
 - Action usage instructions
 
-For example, this README contains `ponylang/readme-version-updater-action@0.2.1` within the example workflow below. On release, that will be updated to whatever the new version is.
+For example, this README contains `ponylang/readme-version-updater-action@0.3.0` within the example workflow below. On release, that will be updated to whatever the new version is.
 
 - Corral add instructions
 
@@ -39,7 +39,7 @@ jobs:
     name: Update version in README examples
     steps:
       - name: Update version in README examples
-        uses: ponylang/readme-version-updater-action@0.2.1
+        uses: ponylang/readme-version-updater-action@0.3.0
         with:
           git_user_name: "Ponylang Main Bot"
           git_user_email: "ponylang.main@gmail.com"
