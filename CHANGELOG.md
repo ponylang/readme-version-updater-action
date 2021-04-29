@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a CHANGELOG](http://keepachangelog.com/).
 
-## [unreleased] - unreleased
+## [0.3.1] - 2021-04-29
 
 ### Fixed
 
@@ -11,9 +11,6 @@ All notable changes to this project will be documented in this file. This projec
 ### Added
 
 - Add support for updating "docker style" use actions ([PR #20](https://github.com/ponylang/readme-version-updater-action/pull/20))
-
-### Changed
-
 
 ## [0.3.0] - 2021-03-25
 
