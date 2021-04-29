@@ -71,14 +71,13 @@ if not readme_file:
 
 # open README and update with new version
 print(INFO + "Updating versions in " + readme_file + " to " + version + ENDC)
-readme = open(readme_file, "r+")
-text = readme.read()
-for sub in subs:
-    (find, replace) = sub
-    text = re.sub(find, replace, text)
-readme.seek(0)
-readme.write(text)
-readme.close()
+with open(readme_file, "r+") as readme:
+    text = readme.read()
+    for sub in subs:
+        (find, replace) = sub
+        text = re.sub(find, replace, text)
+    readme.seek(0)
+    readme.write(text)
 
 print(INFO + "Adding git changes." + ENDC)
 git.add(readme_file)
