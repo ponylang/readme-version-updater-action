@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Added
 
+- Create images on release ([PR #22](https://github.com/ponylang/readme-version-updater-action/pull/22))
 
 ### Changed
 
