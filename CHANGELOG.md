@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Added
 
+- Add support for updating "docker style" use actions ([PR #20](https://github.com/ponylang/readme-version-updater-action/pull/20))
 
 ### Changed
 
