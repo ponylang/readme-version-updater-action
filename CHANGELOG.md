@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Fixed
 
+- Fix build error caused by PyGitHub version dependencies changing ([PR #19](https://github.com/ponylang/readme-version-updater-action/pull/19))
 
 ### Added
 
