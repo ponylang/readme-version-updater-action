@@ -43,6 +43,8 @@ git.config('--global', 'branch.autosetuprebase', 'always')
 
 # what to find and what to replace it with
 subs = [
+    (fr'docker://{repository}:\d+\.\d+\.\d+',
+     f'docker://{repository}:{version}'),
     (fr'{repository}@\d+\.\d+\.\d+',
      f'{repository}@{version}'),
     (fr'corral add github.com/{repository}.git -(-version|v) \d+\.\d+\.\d+',
